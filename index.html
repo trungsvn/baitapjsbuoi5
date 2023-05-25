@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTapJsBuoi5</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- my js -->
+
+</head>
+
+<body>
+    <div style="background-color: aqua;">
+        <h2>BÀI 1 : QUẢN LÝ TUYỂN SINH</h2>
+        <input id="diemchuan" type="number" placeholder="Điểm chuẩn">
+
+        <select id="khuvuc">
+            <option value="">Chọn khu vực</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="X">Không</option>
+        </select>
+        <select id="doituong">
+            <option value="">Chọn đối tượng</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="0">Không</option>
+        </select><br><br>
+        <input id="dm1" type="number" placeholder="Điểm môn 1">
+        <input id="dm2" type="number" placeholder="Điểm môn 2">
+        <input id="dm3" type="number" placeholder="Điểm môn 3"><br><br>
+        <button id="ketqua" class="bnt btn-success">KẾT QUẢ</button>
+        <br>
+        <div class="mt-5 alert alert-success">
+            <H3><span id="xuatraketqua"></span><span id="xuatradiem"></span></H3>
+        </div>
+    </div>
+    <!-- **************************************** -->
+    <div style="background-color: aqua;">
+        <h2>BÀI 2 : TÍNH TIỀN ĐIỆN </h2>
+        <input id="hoten" type="text" placeholder="Nhập Họ Tên">
+        <input id="sokw" type="number" placeholder="Nhập Số Kw">
+        <button id="tinhtiendien" class="bnt btn-success">TÍNH TIỀN ĐIỆN</button>
+        <div class="mt-5 alert alert-success">
+            <H3>Họ Tên: <span id="xuatrahoten"></span>; Tiền điện :<span id="ketquatiendien"></span></H3>
+        </div>
+    </div>
+    <!-- **************************************** -->
+    <div style="background-color: aqua;">
+        <h2>BÀI 3 : TÍNH THUẾ THU NHẬP CÁ NHÂN </h2>
+        <input id="ho_ten" type="text" placeholder="Nhập Họ Tên">
+        <input id="tong_thu_nhap_nam" type="number" placeholder="Tổng Thu Nhập Năm">
+        <input id="so_nguoi_phu_thuoc" type="number" placeholder="Số người phụ thuộc">
+        <button id="tinhtienthue" class="bnt btn-success">TÍNH THUẾ THU NHẬP</button>
+        <div class="mt-5 alert alert-success">
+
+            <H3>Họ & Tên : <span id="ho&ten"></span>;Tiền thuế thu nhập cá nhân : <span
+                    id="xuatthuethunhap"></span></H3>
+        </div>
+    </div>
+    <!-- **************************************** -->
+    <div style="background-color: aqua;">
+        <h2>BÀI 3 : TÍNH TIỀN CÁP </h2>
+        <select id="loai_khach_hang" onchange="myFuntion()">
+            <option value="">Chọn loại khách hàng</option>
+            <option value="nha_dan">Nhà Dân</option>
+            <option value="doanh_nghiep">Doanh Nghiệp</option>
+        </select>
+        <input id="ma_kh" type="text" placeholder="Nhập mã khách hàng">
+        <input id="kenh_cao_cap" type="number" placeholder="Số kênh cao cấp">
+        <input id="kenh_ket_noi" type="number" placeholder="Số kênh kết nối">
+        <button id="tinh_tien_cap" class="bnt btn-success">TÍNH TIỀN CÁP</button>
+        <div class="mt-5 alert alert-success">
+
+            <H3>Mã khách hàng : <span id="ma_khach_hang"></span>;Tiền cáp : <span id="xuattiencap"></span></H3>
+        </div>
+
+        <script src="./index.js"></script>
+</body>
+
+</html>
